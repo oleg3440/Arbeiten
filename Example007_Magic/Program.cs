@@ -15,13 +15,13 @@ Console.WriteLine("+");
 Console.SetCursorPosition(xc, yc);
 Console.WriteLine("+");
 
-int x = xa, y = xb;
+int x = xa, y = xb; // задаем точку
 
-int count = 0;
+int count = 0;   // счетчик, определяющий какое количество раз находит отрезки и делит пополам
 
 while(count < 10000)
 {
-    int what = new Random().Next(0,3); // (0;3) 0 1 2
+    int what = new Random().Next(0,3); // (0;3) 0 1 2 сгенерировали число
     if (what == 0)
     {
         x = (x + xa) / 2;
